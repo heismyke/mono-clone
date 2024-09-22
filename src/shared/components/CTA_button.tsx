@@ -12,9 +12,9 @@ interface ButtonProps {
 const CTA_button: React.FC<ButtonProps> = ({ text, bgColor, textColor, iconColor }) => {
   return (
     <div>
-      <button className={`w-[50%] flex items-center justify-around h-[56px] rounded-lg ${bgColor}`}>
+      <button className={` flex items-center justify-around p-4 gap-3  rounded-lg ${bgColor}`}>
         <p className={`${textColor}`}>{text}</p>
-        <FaArrowRightLong className={`${iconColor}|| textColor} }`} />
+        <FaArrowRightLong className={`${iconColor} }`} />
       </button>
     </div>
   )

@@ -1,12 +1,13 @@
 import React from "react";
 import { CiMenuFries } from "react-icons/ci";
 import { useState } from "react";
-
+// This is comment one
 interface SignupButtonProps {
   disabled?: boolean;
   type?: "button" | "submit" | "reset";
 }
 
+// This is comment two
 interface Logo {
   src: string;
   alt: string;
@@ -24,6 +25,7 @@ interface NavbarData {
   links: Links[];
   signupButton: SignupButton;
 }
+// This is comment three
 const navbarData: NavbarData = {
   logo: {
     src: "/images/logo/mono.png",
@@ -52,7 +54,7 @@ const Navbar: React.FC<SignupButtonProps> = ({
   };
   return (
     <div>
-      <nav className="w-[100%] p-2 md:p-5 relative flex items-center justify-between lg:justify-around">
+      <nav className="w-[100%] xl:w-[90%] xl:mx-auto p-2 md:p-5 relative flex items-center justify-between lg:justify-around">
         <a href="/">
           <div className="px-4 flex justify-center gap-2 items-center">
             <img
