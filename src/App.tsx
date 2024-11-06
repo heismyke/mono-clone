@@ -1,8 +1,8 @@
-import Navbar from "./components/Navbar";
-import Footer from "./Footer";
-import GettingStarted from "./GettingStarted";
-import Header from "./Header";
-import Reviews from "./Reviews";
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import GettingStarted from './components/GettingStarted'
+import Header from './components/Header'
+import Reviews from './components/Reviews'
 function App() {
   return (
     <div>
@@ -12,7 +12,7 @@ function App() {
       <GettingStarted />
       <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
