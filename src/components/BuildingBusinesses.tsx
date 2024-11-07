@@ -1,5 +1,6 @@
 import HeaderText from "../shared/HeaderText";
 import HeaderParagraph from "../shared/HeaderParagraph";
+import Wallet from "../assets/wallet.png"
 
 const BuildingBusinesses = () => {
    return(
@@ -10,6 +11,10 @@ const BuildingBusinesses = () => {
            <HeaderParagraph>
                Here are some of the interesting features and experiences powered by Mono.
            </HeaderParagraph>
+           <div className="w-full  bg-[#F5F5F5] rounded-xl">
+
+                <img src={Wallet} alt="mono thumbnail" width={390} height={534} />
+           </div>
        </div>
    )
 }
