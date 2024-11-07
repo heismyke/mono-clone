@@ -6,7 +6,8 @@ import { RiDoubleQuotesL } from 'react-icons/ri'
 import {useState} from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import { FaArrowLeft } from "react-icons/fa6";
-
+import HeaderText from "../shared/HeaderText";
+import HeaderParagraph from "../shared/HeaderParagraph";
 type Review = {
   reviewer: string
   reviewerPhoto: string
@@ -65,13 +66,15 @@ const Reviews = () => {
   }
   return (
     <div className="w-[90%] mx-auto md:w-[90%] xl:w-[80%]">
-      <h1 className="text-[45px] xl:text-[65px] w-[100%] md:w-[70%] lg:w-[60%] xl:w-[50%] font-DMsans font-semibold leading-[70px] md:leading-[73.6px] lg:leading-[73.6px] xl:leading-[100px]">
+      <HeaderText>
         Why market leaders are choosing Mono
-      </h1>
-      <p className="font-DMsans pt-5 max-w-[95%] md:max-w-[90%] leading-10 md:leading-[55px] md:text-[30px] font-normal text-left text-[20px">Here's what some of them are saying.</p>
+      </HeaderText>
+<HeaderParagraph>
+  Here's what some of them are saying.
+</HeaderParagraph>
       <div className="my-10">
         <div
-            className="w-full   grid grid-cols-1 md:grid-cols-1 xl:grid-cols-2  lg:grid-cols-2 xl:w-[90%]  gap-10">
+            className="grid grid-cols-1 md:grid-cols-1 xl:grid-cols-2  lg:grid-cols-2  gap-10">
           {currentReviews.map((review, index) => {
             return (
                 <div key={index} className="bg-[#F5F5F5]   rounded-xl p-10">
